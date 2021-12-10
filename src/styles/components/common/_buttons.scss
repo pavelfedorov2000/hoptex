@@ -1,0 +1,55 @@
+.btn {
+    width: 22.1rem;
+    height: 6.4rem;
+    @extend %flex-center;
+    @extend %text-12;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s all;
+    @media(max-width: 1024px) {
+        height: 5rem;
+    }
+
+    &--red {
+        background-color: $accent;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $dark;
+            }
+        }
+    }
+
+    &--black {
+        background-color: $dark;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $accent;
+            }
+        }
+    }
+
+    &--white {
+        background-color: #fff;
+        color: $dark;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $accent;
+                color: #fff;
+            }
+        }
+    }
+
+    &--border {
+        color: $dark;
+        border: 0.1rem solid #252525;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $dark;
+                color: #fff;
+            }
+        }
+    }
+}

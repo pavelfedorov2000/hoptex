@@ -1,0 +1,39 @@
+.contact-address {
+    @extend %vertical-align;
+    @media(max-width: 1024px) {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        @media(min-width: 1025px) {
+            margin-right: 1.3rem;
+        }
+        @media(max-width: 1024px) {
+            margin-left: 1rem;
+        }
+    }
+}
+
+.contact-phone {
+    font-weight: 700;
+    transition: .3s color;
+
+    @media (any-hover: hover) {
+        &:hover {
+            color: $accent;
+        }
+    }
+}
+
+.contact-email {
+    text-decoration: underline;
+    transition: .3s color;
+
+    @media (any-hover: hover) {
+        &:hover {
+            color: $accent;
+        }
+    }
+}

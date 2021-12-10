@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Участие в выставке Агропродмаш 2016"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        <main class="page detail-news inner-page">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="breadcrumbs">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>
+                                Участие в выставке Агропродмаш 2016
+                            </span>
+                        </li>
+                    </ol>
+                </nav>
+
+                <div class="detail-news__wrapper">
+                    <section class="news-single">
+                        <div class="row news-single__inner">
+                            <div class="col-50">
+                                <picture>
+                                    <source data-srcset="img/content/news/news-single.webp" type="image/webp">
+                                    <img class="lazy news-single__image" data-src="img/content/news/news-single.jpg"
+                                        alt="" width="720" height="402">
+                                </picture>
+                            </div>
+                            <div class="col-50 news-single__content">
+                                <h1 class="line-title row__title">
+                                    Участие в выставке Агропродмаш 2016
+                                </h1>
+                                <time class="news-date news-single__date" datetime="2016-10-20">20 октября 2016</time>
+                                <div class="news-single__text news-text">
+                                    <p>
+                                        В период с 10 по 14 октября ГК Нортех приняла участие в выставке Агропродмаш
+                                        2016 проходившей в Экспоцентре в Москве.
+                                    </p>
+
+                                    <p>
+                                        На выставке были представлены новинки ассортимента ГК Нортех -
+                                        водонагревательные баки и технологические емкости из
+                                        нержавеющей стали 9Bar собственного производства. Новая продукция ГК Нортех
+                                        была тепло встречена потенциальными
+                                        потребителями, проявившими большой интерес как к технологическим решениям и
+                                        конструктивным особенностям, так и к
+                                        современному дизайну баков и емкостей 9Bar.
+                                    </p>
+                                </div>
+                                <a href="#" class="btn btn--border">Назад</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="recent-news section">
+                        <h2 class="section-title section__title">Последние новости</h2>
+                        <div class="recent-news__cards">
+                            <article class="recent-news-card">
+                                <a href="#" class="recent-news-card__img">
+                                    <picture>
+                                        <source data-srcset="img/content/recent-news/01.webp" type="image/webp">
+                                        <img class="lazy" data-src="img/content/recent-news/01.jpg" alt="" width="407"
+                                            height="244">
+                                    </picture>
+                                </a>
+                                <div class="recent-news-card__content">
+                                    <time class="news-date recent-news-card__date" datetime="2016-10-20">20 октября
+                                        2016</time>
+                                    <h6 class="news-title recent-news-card__title">
+                                        <a href="#">
+                                            Участие в выставке Агропродмаш 2016
+                                        </a>
+                                    </h6>
+                                    <p class="news-text recent-news-card__text">
+                                        В период с 10 по 14 октября ГК «Нортех» приняла участие
+                                        в выставке Агропродмаш 2016 г.
+                                    </p>
+                                    <a href="#" class="recent-news-card__link">Подробнее</a>
+                                </div>
+                            </article>
+                            <article class="recent-news-card">
+                                <a href="#" class="recent-news-card__img">
+                                    <picture>
+                                        <source data-srcset="img/content/recent-news/02.webp" type="image/webp">
+                                        <img class="lazy" data-src="img/content/recent-news/02.jpg" alt="" width="407"
+                                            height="244">
+                                    </picture>
+                                </a>
+                                <div class="recent-news-card__content">
+                                    <time class="news-date recent-news-card__date" datetime="2016-10-20">20 октября
+                                        2016</time>
+                                    <h6 class="news-title recent-news-card__title">
+                                        <a href="#">
+                                            Обучающий семинар 27 мая!
+                                        </a>
+                                    </h6>
+                                    <p class="news-text recent-news-card__text">
+                                        ГК «Нортех» приглашает принять участие в обучающем
+                                        семинаре 27 мая 2016 г.
+                                    </p>
+                                    <a href="#" class="recent-news-card__link">Подробнее</a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+
+        @@include('../../blocks/modules/popups/_popups.html')
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
+    <script src="js/base.min.js"></script>
+
+</body>
+
+</html>

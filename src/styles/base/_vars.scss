@@ -1,0 +1,154 @@
+// colors
+$accent: #E5181E;
+$dark: #252525;
+//$red: ;
+//$blue: ;
+//$dark-blue: ;
+//$yellow: ;
+//$orange: ;
+//$light: ;
+//$border-color: ;
+//$border: 1px solid $border-color;
+
+// fonts
+//$second-font: , sans-serif;
+
+$container: 144rem;
+$gap: 1.5rem;
+
+
+%gothic {
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+%gothic-400 {
+    @extend %gothic;
+    font-family: "Stereo Gothic W01 400" !important;
+}
+
+%gothic-600 {
+    @extend %gothic;
+    font-family: "Stereo Gothic W01 600" !important;
+}
+
+%gothic-650 {
+    @extend %gothic;
+    font-family: "Stereo Gothic W01 650" !important;
+}
+
+// Typography
+%text-12 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+%text-13 {
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+}
+
+%text-14 {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+
+%text-16 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    @media(max-width: 1024px) {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+}
+
+%text-18 {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+}
+
+%text-20 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+%text-22 {
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+}
+
+%text-24 {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    @media(max-width: 500px) {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+%vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+%flex-center {
+    @extend %vertical-align;
+    justify-content: center;
+}
+
+%flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+%flex-row-center {
+    @extend %flex-row;
+    align-items: center;
+}
+
+%flex-row-end {
+    @extend %flex-row;
+    align-items: flex-end;
+}
+
+%flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+%flex-col-center {
+    @extend %flex-col;
+    align-items: center;
+}
+
+%flex-col-end {
+    @extend %flex-col;
+    align-items: flex-end;
+}
+
+%pos-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+%pos-center-y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+%pos-center-xy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+%cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

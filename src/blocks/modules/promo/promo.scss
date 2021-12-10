@@ -1,0 +1,128 @@
+.promo {
+    position: relative;
+    display: grid;
+    @media(min-width: 1025px) {
+        height: calc(100vh - 16.9rem);
+    }
+    
+    &__hoptex {
+        position: absolute;
+        right: 0;
+        z-index: 30;
+        bottom: -5rem;
+        @extend %gothic-650;
+        font-size: 14.4rem;
+        line-height: 21.6rem;
+        color: rgba(#fff, .1);
+        text-transform: uppercase;
+        @media(max-width: 1024px) {
+            font-size: 7rem;
+            line-height: 14rem;
+            bottom: 0;
+        }
+        @media(max-width: 500px) {
+            display: none;
+        }
+    }
+    // .promo__content
+
+    &__content {
+        position: relative;
+        z-index: 20;
+        padding-top: 12.5rem;
+        color: #fff;
+        @media(max-width: 1024px) {
+            padding: 7rem 0 3rem;
+        }
+        @media(max-width: 767px) {
+            padding-top: 5rem;
+        }
+    }
+
+    &__content-inner {
+        @media(min-width: 1025px) {
+            max-width: 78.4rem;
+        }
+    }
+
+    &__content,
+    &__slider {
+        grid-area: 1 / 2;
+    }
+
+    &__slider-item {
+        img {
+            @extend %cover;
+        }
+    }
+
+    // .promo__title
+
+    &__title {
+        font-size: 4.4rem;
+        line-height: 57 / 44 * 100%;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 1.6rem;
+        @media(max-width: 1024px) {
+            font-size: 3.6rem;
+        }
+        @media(max-width: 767px) {
+            font-size: 2.4rem;
+        }
+        @media(max-width: 500px) {
+            font-size: 2rem;
+        }
+    }
+
+    // .promo__subtitle
+
+    &__subtitle {
+        @extend %gothic-600;
+        font-size: 5.2rem;
+        line-height: 68 / 52 * 100%;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        @media(max-width: 1024px) {
+            font-size: 4.4rem;
+        }
+        @media(max-width: 767px) {
+            font-size: 3.6rem;
+        }
+        @media(max-width: 500px) {
+            font-size: 2.4rem;
+        }
+    }
+
+    // .promo__text
+
+    &__text {
+        @extend %text-18;
+        font-weight: 600;
+        margin-bottom: 4rem;
+        @media(max-width: 1024px) {
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+        }
+        @media(max-width: 500px) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__btn {
+        margin-bottom: 9rem;
+    }
+
+    .swiper-pagination {
+        position: relative;
+        text-align: left;
+        display: flex;
+    }
+    .swiper-pagination-bullet {
+        background-color: #fff;
+        opacity: .3;
+    }
+    .swiper-pagination-bullet-active {
+        opacity: 1;
+    }
+}

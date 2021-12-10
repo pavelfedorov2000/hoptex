@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Проекты"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        <main class="page projects inner-page">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="breadcrumbs">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>
+                                Новости
+                            </span>
+                        </li>
+                    </ol>
+                </nav>
+
+                <h1 class="page-title">Новости</h1>
+
+                <div class="projects-filter">
+                    <button class="projects-filter__btn projects-filter__btn--active" data-category-filter="all"
+                        type="button">Все проекты</button>
+                    <button class="projects-filter__btn" data-category-filter="poultry-houses"
+                        type="button">Птичники</button>
+                    <button class="projects-filter__btn" data-category-filter="factories" type="button">Заводы
+                        (цеха)</button>
+                    <button class="projects-filter__btn" data-category-filter="warehouses" type="button">Склады</button>
+                    <button class="projects-filter__btn" data-category-filter="pigsties"
+                        type="button">Свинарники</button>
+                    <button class="projects-filter__btn" data-category-filter="greenhouses"
+                        type="button">Теплицы</button>
+                    <button class="projects-filter__btn" data-category-filter="construction-sites"
+                        type="button">Строительные
+                        площадки</button>
+                    <button class="projects-filter__btn" data-category-filter="shopping-malls" type="button">Торговые
+                        комплексы</button>
+                    <button class="projects-filter__btn" data-category-filter="sport-constructions"
+                        type="button">Спортивные
+                        сооружения</button>
+                </div>
+
+                <div class="projects__grid">
+                    <article data-project-category="shopping-malls" class="project-card">
+                        <div class="project-card__img">
+                            <picture>
+                                <source data-srcset="img/content/projects/01.webp" type="image/webp">
+                                <img class="lazy" data-src="img/content/projects/01.jpg" alt="" width="690"
+                                    height="480">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h6 class="project-card__title project-title">
+                                <a href="#">Торговый центр "АШАН", Москва</a>
+                            </h6>
+                            <dl class="project-card__list project-info-list">
+                                <div class="project-card__list-item">
+                                    <dt>Энергоноситель:</dt>
+                                    <dd>электричество</dd>
+                                </div>
+                                <div class="project-card__list-item">
+                                    <dt>Установленная система:</dt>
+                                    <dd>
+                                        3.000 литров
+                                        (накопительный водонагреватель OSO 17 SE 3000 - 1 шт.)
+                                    </dd>
+                                </div>
+                            </dl>
+                            <div class="btn project-card__btn btn--red">Подробнее</div>
+                        </div>
+                        <a href="#" class="full-link"></a>
+                    </article>
+                    <article data-project-category="factories" class="project-card">
+                        <div class="project-card__img">
+                            <picture>
+                                <source data-srcset="img/content/projects/02.webp" type="image/webp">
+                                <img class="lazy" data-src="img/content/projects/02.jpg" alt="" width="690"
+                                    height="480">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h6 class="project-card__title project-title">
+                                <a href="#">
+                                    Жилой комплекс "КУТУЗОВСКАЯ РИВЬЕРА"
+                                </a>
+                            </h6>
+                            <dl class="project-card__list project-info-list">
+                                <div class="project-card__list-item">
+                                    <dt>Энергоноситель:</dt>
+                                    <dd>электричество</dd>
+                                </div>
+                                <div class="project-card__list-item">
+                                    <dt>Установленная система:</dt>
+                                    <dd>
+                                        3.000 литров
+                                        (накопительный водонагреватель OSO 17 SE 3000 - 1 шт.)
+                                    </dd>
+                                </div>
+                            </dl>
+                            <div class="btn project-card__btn btn--red">Подробнее</div>
+                        </div>
+                        <a href="#" class="full-link"></a>
+                    </article>
+                    <article class="project-card" data-project-category="sport-constructions">
+                        <div class="project-card__img">
+                            <picture>
+                                <source data-srcset="img/content/projects/03.webp" type="image/webp">
+                                <img class="lazy" data-src="img/content/projects/03.jpg" alt="" width="690"
+                                    height="480">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h6 class="project-card__title project-title">
+                                <a href="#">
+                                    ЛЕДОВЫЙ ДВОРЕЦ "МЕТАЛЛУРГ", МАГНИТОГОРСК
+                                </a>
+                            </h6>
+                            <dl class="project-card__list project-info-list">
+                                <div class="project-card__list-item">
+                                    <dt>Энергоноситель:</dt>
+                                    <dd>электричество</dd>
+                                </div>
+                                <div class="project-card__list-item">
+                                    <dt>Установленная система:</dt>
+                                    <dd>
+                                        3.000 литров
+                                        (накопительный водонагреватель OSO 17 SE 3000 - 1 шт.)
+                                    </dd>
+                                </div>
+                            </dl>
+                            <div class="btn project-card__btn btn--red">Подробнее</div>
+                        </div>
+                        <a href="#" class="full-link"></a>
+                    </article>
+                    <article class="project-card" data-project-category="greenhouses">
+                        <div class="project-card__img">
+                            <picture>
+                                <source data-srcset="img/content/projects/04.webp" type="image/webp">
+                                <img class="lazy" data-src="img/content/projects/04.jpg" alt="" width="690"
+                                    height="480">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h6 class="project-card__title project-title">
+                                <a href="#">
+                                    Московский планетарий
+                                </a>
+                            </h6>
+                            <dl class="project-card__list project-info-list">
+                                <div class="project-card__list-item">
+                                    <dt>Энергоноситель:</dt>
+                                    <dd>электричество</dd>
+                                </div>
+                                <div class="project-card__list-item">
+                                    <dt>Установленная система:</dt>
+                                    <dd>
+                                        3.000 литров
+                                        (накопительный водонагреватель OSO 17 SE 3000 - 1 шт.)
+                                    </dd>
+                                </div>
+                            </dl>
+                            <div class="btn project-card__btn btn--red">Подробнее</div>
+                        </div>
+                        <a href="#" class="full-link"></a>
+                    </article>
+                    <article class="project-card" data-project-category="warehouses">
+                        <div class="project-card__img">
+                            <picture>
+                                <source data-srcset="img/content/projects/05.webp" type="image/webp">
+                                <img class="lazy" data-src="img/content/projects/05.jpg" alt="" width="690"
+                                    height="480">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h6 class="project-card__title project-title">
+                                <a href="#">
+                                    ГОСТИНИЦА "MARRIOT", МОСКВА
+                                </a>
+                            </h6>
+                            <dl class="project-card__list project-info-list">
+                                <div class="project-card__list-item">
+                                    <dt>Энергоноситель:</dt>
+                                    <dd>электричество</dd>
+                                </div>
+                                <div class="project-card__list-item">
+                                    <dt>Установленная система:</dt>
+                                    <dd>
+                                        3.000 литров
+                                        (накопительный водонагреватель OSO 17 SE 3000 - 1 шт.)
+                                    </dd>
+                                </div>
+                            </dl>
+                            <div class="btn project-card__btn btn--red">Подробнее</div>
+                        </div>
+                        <a href="#" class="full-link"></a>
+                    </article>
+                    <article class="project-card" data-project-category="pigsties">
+                        <div class="project-card__img">
+                            <picture>
+                                <source data-srcset="img/content/projects/06.webp" type="image/webp">
+                                <img class="lazy" data-src="img/content/projects/06.jpg" alt="" width="690"
+                                    height="480">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h6 class="project-card__title project-title">
+                                <a href="#">
+                                    ЖИЛОЙ ДОМ СКАТЕРНЫЙ ПЕР., МОСКВА
+                                </a>
+                            </h6>
+                            <dl class="project-card__list project-info-list">
+                                <div class="project-card__list-item">
+                                    <dt>Энергоноситель:</dt>
+                                    <dd>электричество</dd>
+                                </div>
+                                <div class="project-card__list-item">
+                                    <dt>Установленная система:</dt>
+                                    <dd>
+                                        3.000 литров
+                                        (накопительный водонагреватель OSO 17 SE 3000 - 1 шт.)
+                                    </dd>
+                                </div>
+                            </dl>
+                            <div class="btn project-card__btn btn--red">Подробнее</div>
+                        </div>
+                        <a href="#" class="full-link"></a>
+                    </article>
+                    <article class="project-card" data-project-category="poultry-houses">
+                        <div class="project-card__img">
+                            <picture>
+                                <source data-srcset="img/content/projects/07.webp" type="image/webp">
+                                <img class="lazy" data-src="img/content/projects/07.jpg" alt="" width="690"
+                                    height="480">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h6 class="project-card__title project-title">
+                                <a href="#">
+                                    ММДЦ "МОСКВА-СИТИ "СЕВЕРНАЯ БАШНЯ"
+                                </a>
+                            </h6>
+                            <dl class="project-card__list project-info-list">
+                                <div class="project-card__list-item">
+                                    <dt>Энергоноситель:</dt>
+                                    <dd>электричество</dd>
+                                </div>
+                                <div class="project-card__list-item">
+                                    <dt>Установленная система:</dt>
+                                    <dd>
+                                        3.000 литров
+                                        (накопительный водонагреватель OSO 17 SE 3000 - 1 шт.)
+                                    </dd>
+                                </div>
+                            </dl>
+                            <div class="btn project-card__btn btn--red">Подробнее</div>
+                        </div>
+                        <a href="#" class="full-link"></a>
+                    </article>
+                    <article class="project-card" data-project-category="shopping-malls">
+                        <div class="project-card__img">
+                            <picture>
+                                <source data-srcset="img/content/projects/01.webp" type="image/webp">
+                                <img class="lazy" data-src="img/content/projects/01.jpg" alt="" width="690"
+                                    height="480">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h6 class="project-card__title project-title">
+                                <a href="#">Торговый центр "АШАН", Москва</a>
+                            </h6>
+                            <dl class="project-card__list project-info-list">
+                                <div class="project-card__list-item">
+                                    <dt>Энергоноситель:</dt>
+                                    <dd>электричество</dd>
+                                </div>
+                                <div class="project-card__list-item">
+                                    <dt>Установленная система:</dt>
+                                    <dd>
+                                        3.000 литров
+                                        (накопительный водонагреватель OSO 17 SE 3000 - 1 шт.)
+                                    </dd>
+                                </div>
+                            </dl>
+                            <div class="btn project-card__btn btn--red">Подробнее</div>
+                        </div>
+                        <a href="#" class="full-link"></a>
+                    </article>
+                    <article class="project-card" data-project-category="shopping-malls">
+                        <div class="project-card__img">
+                            <picture>
+                                <source data-srcset="img/content/projects/02.webp" type="image/webp">
+                                <img class="lazy" data-src="img/content/projects/02.jpg" alt="" width="690"
+                                    height="480">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h6 class="project-card__title project-title">
+                                <a href="#">
+                                    Жилой комплекс "КУТУЗОВСКАЯ РИВЬЕРА"
+                                </a>
+                            </h6>
+                            <dl class="project-card__list project-info-list">
+                                <div class="project-card__list-item">
+                                    <dt>Энергоноситель:</dt>
+                                    <dd>электричество</dd>
+                                </div>
+                                <div class="project-card__list-item">
+                                    <dt>Установленная система:</dt>
+                                    <dd>
+                                        3.000 литров
+                                        (накопительный водонагреватель OSO 17 SE 3000 - 1 шт.)
+                                    </dd>
+                                </div>
+                            </dl>
+                            <div class="btn project-card__btn btn--red">Подробнее</div>
+                        </div>
+                        <a href="#" class="full-link"></a>
+                    </article>
+                    <article class="project-card" data-project-category="sport-constructions">
+                        <div class="project-card__img">
+                            <picture>
+                                <source data-srcset="img/content/projects/03.webp" type="image/webp">
+                                <img class="lazy" data-src="img/content/projects/03.jpg" alt="" width="690"
+                                    height="480">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h6 class="project-card__title project-title">
+                                <a href="#">
+                                    ЛЕДОВЫЙ ДВОРЕЦ "МЕТАЛЛУРГ", МАГНИТОГОРСК
+                                </a>
+                            </h6>
+                            <dl class="project-card__list project-info-list">
+                                <div class="project-card__list-item">
+                                    <dt>Энергоноситель:</dt>
+                                    <dd>электричество</dd>
+                                </div>
+                                <div class="project-card__list-item">
+                                    <dt>Установленная система:</dt>
+                                    <dd>
+                                        3.000 литров
+                                        (накопительный водонагреватель OSO 17 SE 3000 - 1 шт.)
+                                    </dd>
+                                </div>
+                            </dl>
+                            <div class="btn project-card__btn btn--red">Подробнее</div>
+                        </div>
+                        <a href="#" class="full-link"></a>
+                    </article>
+                    <article class="project-card" data-project-category="poultry-houses">
+                        <div class="project-card__img">
+                            <picture>
+                                <source data-srcset="img/content/projects/04.webp" type="image/webp">
+                                <img class="lazy" data-src="img/content/projects/04.jpg" alt="" width="690"
+                                    height="480">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h6 class="project-card__title project-title">
+                                <a href="#">
+                                    Московский планетарий
+                                </a>
+                            </h6>
+                            <dl class="project-card__list project-info-list">
+                                <div class="project-card__list-item">
+                                    <dt>Энергоноситель:</dt>
+                                    <dd>электричество</dd>
+                                </div>
+                                <div class="project-card__list-item">
+                                    <dt>Установленная система:</dt>
+                                    <dd>
+                                        3.000 литров
+                                        (накопительный водонагреватель OSO 17 SE 3000 - 1 шт.)
+                                    </dd>
+                                </div>
+                            </dl>
+                            <div class="btn project-card__btn btn--red">Подробнее</div>
+                        </div>
+                        <a href="#" class="full-link"></a>
+                    </article>
+                </div>
+                <div class="projects__more">
+                    <button class="btn btn--border" type="button">Загрузить еще</button>
+                </div>
+            </div>
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+
+        @@include('../../blocks/modules/popups/_popups.html')
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
+    <script src="js/base.min.js"></script>
+
+</body>
+
+</html>

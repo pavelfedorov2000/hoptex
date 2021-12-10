@@ -1,0 +1,124 @@
+//swiper
+.swiper-container {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.swiper-buttons {
+    display: flex;
+
+    >* {
+        &:not(:last-child) {
+            margin-right: 0.8rem;
+        }
+    }
+
+    @media(max-width: 767px) {
+        display: none;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: relative;
+    }
+
+    .swiper-button-prev {
+        right: auto;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    top: 0;
+    right: 0;
+    width: 5.6rem;
+    height: 5.6rem;
+    background-color: #BDBDBD;
+    margin: 0;
+    transition: .3s all;
+
+    &:after {
+        content: '';
+        @extend %pos-center-xy;
+        width: 0.7rem;
+        height: 0.8rem;
+        background-color: #FFF;
+    }
+
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: $accent;
+            border-color: $accent;
+
+            svg path {
+                stroke: #fff;
+            }
+        }
+    }
+}
+
+.swiper-button-prev {
+    //left: auto;
+    //right: 6.4rem;
+    &:after {
+        clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+    }
+}
+
+.swiper-button-next {
+    &:after {
+        clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    }
+}
+
+.swiper-button-next {
+    margin-bottom: 0;
+    margin-left: 0.8rem;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: none;
+
+    @media(max-width: 1024px) {
+        display: flex;
+    }
+    @media(max-width: 767px) {
+        justify-content: center;
+    }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    
+}
+
+.swiper-pagination-bullet {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: $dark;
+    &:not(:last-child) {
+        margin-right: 1.65rem;
+    }
+}
+
+.swiper-pagination {
+    display: none;
+    @extend %pos-center-x;
+    bottom: 0;
+
+    @media(max-width: 767px) {
+        display: flex;
+    }
+}
+
+/* .swiper-pagination-current,
+.swiper-pagination-total {
+    &:before {
+        content: '0'; // если хотим нумерацию 01, 02, 03, ...
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+} */

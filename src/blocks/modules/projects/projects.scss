@@ -1,0 +1,323 @@
+.p-home-projects {
+
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        height: 38.8rem;
+        background-color: #F2F2F2;
+    }
+    // .p-home-recent-projects__slider
+
+    &__slider {
+        @media(max-width: 767px) {
+            padding-bottom: 5rem;
+        }
+        @media(min-width: 1025px) {
+            width: 60rem * 2+12rem;
+        }
+        .swiper-slide {
+            @media(min-width: 768px) {
+                transition: .5s all;
+            }
+        }
+        .swiper-slide-next {
+            @media(min-width: 1025px) {
+                padding-top: 11.2rem;
+            }
+        }
+    }
+}
+
+.p-home-project {
+
+    // .p-home-recent-project__img
+
+    &__img {
+        display: block;
+        margin-bottom: 3rem;
+        width: 100%;
+        height: 36rem;
+        img {
+            @extend %cover;
+        }
+    }
+
+    // .p-home-recent-project__title
+
+    &__title {
+        margin-bottom: 1.7rem;
+    }
+
+    // .p-home-recent-project__list
+
+    &__list {
+        margin-bottom: 3rem;
+    }
+
+    // .p-home-recent-project__list-item
+
+    &__list-item {
+        &:not(:last-child) {
+            margin-bottom: 0.4rem;
+        }
+    }
+}
+
+.project-title {
+    @extend %text-16;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.projects {
+
+    padding-bottom: 11rem;
+    // .projects__grid
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 6rem;
+        padding: 6rem 0;
+        @media(max-width: 1024px) {
+            grid-gap: 3rem;
+            grid-template-columns: 1fr;
+        }
+        >* {
+            &:not(:first-child) {
+                @media(min-width: 1025px) {
+                    min-height: 48rem;
+                }
+            }
+            &:first-child {
+                @media(min-width: 1025px) {
+                    grid-column: span 2;
+                    min-height: 51.4rem;
+                }
+            }
+        }
+    }
+
+    &__more {
+        @extend %flex-center;
+    }
+}
+
+.projects-filter {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    margin: -0.5rem -1.3rem;
+    // .projects-filter__btn
+
+    &__btn {
+        @extend %text-14;
+        font-weight: 600;
+        padding: 0.5rem 2.25rem;
+        opacity: .5;
+    }
+
+    // .projects-filter__btn--active
+
+    &__btn--active {
+        position: relative;
+        opacity: 1;
+        &:before {
+            content: '';
+            @extend %pos-center-y;
+            left: 1rem;
+            width: 0.9rem;
+            height: 0.9rem;
+            border-radius: 50%;
+            background-color: $accent;
+        }
+    }
+}
+
+.project-card {
+
+    display: grid;
+    position: relative;
+
+    &.hidden {
+        display: none;
+    }
+    // .project-card__img
+
+    &__img, &__content {
+        grid-area: 1 / 2;
+    }
+
+    &__img {
+        img {
+            @extend %cover;
+        }
+    }
+
+    // .project-card__content
+
+    &__content {
+        padding: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        color: #fff;
+        @media(max-width: 1024px) {
+            padding: 3rem;
+        }
+    }
+
+    // .project-card__title
+
+    &__title {
+        margin-bottom: 1.6rem;
+    }
+
+    // .project-card__list
+
+    &__list {
+        color: #fff;
+        margin-bottom: 3rem;
+    }
+
+    &__list-item {
+        &:not(:last-child) {
+            margin-bottom: 0.6rem;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        z-index: 25;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: #fff;
+                color: $dark;
+            }
+        }
+    }
+}
+
+.detail-project {
+    position: relative;
+    padding-top: 4.7rem;
+    @media(max-width: 1024px) {
+        padding-top: 3rem;
+    }
+    @media(max-width: 767px) {
+        padding-top: 0;
+    }
+    &:after {
+        @extend %gothic-600;
+        @media(min-width: 1025px) {
+            content: 'Нортех';
+            position: absolute;
+            left: 0;
+            bottom: -5.4rem;
+            z-index: -1;
+            font-size: 7.5rem;
+            line-height: 11.2rem;
+            color: #F2F2F2;
+            text-transform: uppercase;
+        }
+    }
+    &__inner {
+        @media(max-width: 1024px) {
+            grid-template-columns: 1fr;
+            grid-gap: 3rem;
+        }
+    }
+    &__list {
+        @media(min-width: 1025px) {
+            max-width: 42.7rem;
+        }
+        margin-bottom: 5rem;
+        line-height: 1.7rem;
+        @media(max-width: 1024px) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__list-item {
+        &:not(:last-child) {
+            margin-bottom: 0.8rem;
+        }
+    }
+}
+
+.slider-projects {
+    padding: 14rem 0 16.6rem;
+    @media(max-width: 1024px) {
+        padding: 10rem 0;
+    }
+    @media(max-width: 767px) {
+        padding-top: 5rem;
+    }
+
+    &__slider {
+        @media(max-width: 767px) {
+            padding-bottom: 5rem;
+        }
+    }
+}
+
+.slider-project {
+    @media(min-width: 1025px) {
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: 31rem auto;
+    }
+    @media(max-width: 1024px) {
+        min-height: 56rem;
+        display: flex;
+        flex-direction: column;
+    }
+    // .slider-project__img
+
+    &__img {
+        img {
+            @extend %cover;
+        }
+    }
+
+    // .slider-project__content
+
+    &__content {
+        @extend %flex-col;
+        @media(max-width: 1024px) {
+            background-color: #f2f2f2;
+            padding: 3rem 1.5rem;
+            flex-grow: 1;
+        }
+    }
+
+    // .slider-project__title
+
+    &__title {
+        @extend %text-16;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1.6rem;
+    }
+
+    &__list {
+        margin-bottom: 2rem;
+        flex-grow: 1;
+    }
+
+    // .slider-project__list
+
+    &__list-item {
+        &:not(:last-child) {
+            margin-bottom: 0.6rem;
+        }
+    }
+}
+

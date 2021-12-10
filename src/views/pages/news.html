@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Новости"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        <main class="page news inner-page">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="breadcrumbs">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>
+                                Новости
+                            </span>
+                        </li>
+                    </ol>
+                </nav>
+
+                <h1 class="page-title">Новости</h1>
+                <div class="news__list">
+                    <article class="news__item">
+                        <a href="#" class="news__item-img">
+                            <picture>
+                                <source data-srcset="img/content/news/01.webp" type="image/webp">
+                                <img class="lazy" data-src="img/content/news/01.jpg" alt="" width="600" height="350">
+                            </picture>
+                        </a>
+                        <div class="news__item-content">
+                            <time class="news-date news__item-date" datetime="2016-10-20">20 октября 2016</time>
+                            <h6 class="news-title news__item-title">
+                                <a href="#">
+                                    УЧАСТИЕ В ВЫСТАВКЕ АГРОПРОДМАШ 2016
+                                </a>
+                            </h6>
+                            <p class="news-text news__item-text">
+                                В период с 10 по 14 октября ГК «Нортех» приняла участие в выставке Агропродмаш 2016 г.
+                            </p>
+                            <a href="#" class="btn btn--black">Подробнее</a>
+                        </div>
+                    </article>
+                    <article class="news__item">
+                        <a href="#" class="news__item-img">
+                            <picture>
+                                <source data-srcset="img/content/news/02.webp" type="image/webp">
+                                <img class="lazy" data-src="img/content/news/02.jpg" alt="" width="600" height="350">
+                            </picture>
+                        </a>
+                        <div class="news__item-content">
+                            <time class="news-date news__item-date" datetime="2016-05-28">28 мая 2016</time>
+                            <h6 class="news-title news__item-title">
+                                <a href="#">
+                                    ПРОВЕДЕН ОБУЧАЮЩИЙ СЕМИНАР
+                                </a>
+                            </h6>
+                            <p class="news-text news__item-text">
+                                ГК «Нортех» был организован и проведен обучающий
+                                семинар 27 мая 2016 г.
+                            </p>
+                            <a href="#" class="btn btn--black">Подробнее</a>
+                        </div>
+                    </article>
+                    <article class="news__item">
+                        <a href="#" class="news__item-img">
+                            <picture>
+                                <source data-srcset="img/content/news/03.webp" type="image/webp">
+                                <img class="lazy" data-src="img/content/news/03.jpg" alt="" width="600" height="350">
+                            </picture>
+                        </a>
+                        <div class="news__item-content">
+                            <time class="news-date news__item-date" datetime="2016-05-23">23 мая 2016</time>
+                            <h6 class="news-title news__item-title">
+                                <a href="#">
+                                    ОБУЧАЮЩИЙ СЕМИНАР 27 МАЯ!
+                                </a>
+                            </h6>
+                            <p class="news-text news__item-text">
+                                ГК «Нортех» приглашает принять участие в обучающем
+                                семинаре 27 мая 2016 г.
+                            </p>
+                            <a href="#" class="btn btn--black">Подробнее</a>
+                        </div>
+                    </article>
+                </div>
+                <nav class="pagination news__pagination" aria-label="pagination">
+                    <ol class="pagination__list">
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link pagination__link--active">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">4</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">5</a>
+                        </li>
+                    </ol>
+                    <a href="#" class="pagination__next-link">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#next"></use>
+                        </svg>
+                    </a>
+                </nav>
+            </div>
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+
+        @@include('../../blocks/modules/popups/_popups.html')
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
+    <script src="js/base.min.js"></script>
+
+</body>
+
+</html>

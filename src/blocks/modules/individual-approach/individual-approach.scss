@@ -1,0 +1,157 @@
+.individual-approach {
+    // .individual-approach__body
+
+    &__body {
+        display: grid;
+        grid-gap: 6rem;
+    }
+
+    // .individual-approach__title
+
+    &__title {
+        margin-bottom: 0.8rem;
+    }
+
+    // .individual-approach__subtitle
+
+    &__subtitle {
+        @extend %text-13;
+        color: #333;
+    }
+
+    // .individual-approach__steps
+
+    &__steps {
+        @media(min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: -1.5rem;
+        }
+        @media(min-width: 1025px) {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            margin: 0;
+        }
+    }
+
+    // .individual-approach__step
+
+    &__step {
+        @media(min-width: 1025px) {
+            width: 100%;
+            padding: 0;
+            min-width: 17.4rem;
+            max-width: 17.4rem;
+        }
+        @media(min-width: 768px) {
+            width: 25%;
+            padding: 1.5rem;
+        }
+        @media(max-width: 767px) {
+            display: flex;
+            align-items: center;
+        }
+        &:not(:last-child) {
+            @media(min-width: 1025px) {
+                margin-right: 4.4rem;
+            }
+            @media(max-width: 767px) {
+                margin-bottom: 2rem;
+            }
+            .individual-approach__step-img {
+                &:after {
+                    @extend %pos-center-y;
+                    @media(min-width: 1025px) {
+                        content: '';
+                        right: -12rem;
+                        width: 8rem;
+                        height: 0.1rem;
+                        background-color: #dfdfdf;
+                    }
+                }
+            }
+        }
+    }
+
+    // .individual-approach__step-img
+
+    &__step-img {
+        position: relative;
+        @media(min-width: 1025px) {
+            display: inline-block;
+            margin-bottom: 3rem;
+        }
+        @media(min-width: 768px) {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
+        }
+        @media(max-width: 1024px) {
+            display: flex;
+            justify-content: center;
+        }
+        svg {
+            width: 4.4rem;
+            height: 4.4rem;
+            @media(max-width: 1024px) {
+                width: 4rem;
+                height: 4rem;
+            }
+            @media(max-width: 767px) {
+                margin-right: 1.5rem;
+            }
+        }
+    }
+
+    // .individual-approach__step-descr
+
+    &__step-descr {
+        @extend %text-12;
+        font-weight: 500;
+        @media(max-width: 1024px) {
+            text-align: center;
+        }
+        @media(max-width: 767px) {
+            text-align: left;
+        }
+    }
+}
+
+.attention-box {
+
+    background-color: #F2F2F2;
+    padding: 3.15rem 3rem;
+    @media(min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+    // .attention-box__icon
+
+    &__icon {
+        width: 12rem;
+        height: 12rem;
+        fill: $accent;
+        @media(min-width: 768px) {
+            margin-right: 2rem;
+        }
+        @media(max-width: 1024px) {
+            width: 10rem;
+            height: 10rem;
+        }
+        @media(max-width: 767px) {
+            display: block;
+            margin: 0 auto 2rem;
+        }
+    }
+
+    // .attention-box__text
+
+    &__text {
+        @extend %text-13;
+        color: #333;
+        @media(max-width: 767px) {
+            text-align: center;
+        }
+    }
+}

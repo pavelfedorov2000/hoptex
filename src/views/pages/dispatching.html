@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Диспетчеризация"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        <main class="page inner-page">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="breadcrumbs">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>
+                                Каталог
+                            </span>
+                        </li>
+                    </ol>
+                </nav>
+                <h1 class="page-title">Диспетчеризация</h1>
+                <section class="section dispatching">
+                    <div class="dispatching__inner">
+                        <div class="dispatching__image">
+                            <picture>
+                                <source data-srcset="img/content/dispatching.webp" type="image/webp">
+                                <img class="lazy" data-src="img/content/dispatching.jpg" alt="" width="600"
+                                    height="410">
+                            </picture>
+                        </div>
+                        <div class="dispatching__content">
+                            <h2 class="title-24 dispatching__title">
+                                Диспетчеризация инженерных систем
+                            </h2>
+                            <div class="dispatching__text">
+                                Компания «ПромТИС» предлагает комплексные услуги по автоматизации и диспетчеризации
+                                инженерных систем зданий
+                                промышленного и коммерческого назначения. Специалисты берут на себя полный цикл работ от
+                                проектирования до монтажа и
+                                дальнейшего обслуживания оборудования. Учитывается специфика деятельности каждого
+                                конкретного предприятия, исходные
+                                технические условия и пожелания заказчика.
+                            </div>
+                            <div class="dispatching__buttons">
+                                <a href="#" class="btn btn--black">Подробнее о диспетчеризации</a>
+                                <a href="#" class="btn btn--border">Примеры работ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dispatching__automatization">
+                        <div class="section-title dispatching__automatization-title">
+                            Автоматизация инженерных систем – преимущество технологий
+                        </div>
+                        <p>
+                            Внедрение информационных технологий в обслуживание коммуникаций значительно облегчает
+                            контроль работоспособности.
+                            Использование систем диспетчеризации инженерного оборудования дает следующие преимущества:
+                        </p>
+                        <ul class="dispatching__automatization-list">
+                            <li>отслеживание текущего состояния;</li>
+                            <li>заблаговременное предупреждение о возможных неполадках;</li>
+                            <li>оповещение о перебоях;</li>
+                            <li>возможность запрограммировать действия в случае критических ситуаций.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            @@include('../../blocks/modules/individual-approach/_individual-approach.html')
+
+            <section class="features">
+                <div class="container">
+                    <div class="features__grid">
+                        <div class="features__top">
+                            <ul class="features__list">
+                                <li>Удаленные объекты</li>
+                                <li>Web-доступ</li>
+                                <li>Графический интерфейс</li>
+                                <li>Мониторинг</li>
+                                <li>Управление</li>
+                                <li>Учет</li>
+                                <li>Техобслуживание</li>
+                                <li>Оповещение</li>
+                            </ul>
+                        </div>
+                        <div class="features__card">
+                            <div class="features__card-title">Вентиляция</div>
+                            <ul class="features__card-list">
+                                <li>темп. в канале</li>
+                                <li>темп. в помещении</li>
+                                <li>уставка темп.</li>
+                                <li>давление в канале</li>
+                                <li>вкл-выкл</li>
+                                <li>аварийные остановки</li>
+                            </ul>
+                        </div>
+                        <div class="features__card">
+                            <div class="features__card-title">Водоснабжение</div>
+                            <ul class="features__card-list">
+                                <li>давление на вводе</li>
+                                <li>работа насосов</li>
+                                <li>контроль КНС</li>
+                                <li>расход воды</li>
+                                <li>аварии</li>
+                            </ul>
+                        </div>
+                        <div class="features__card">
+                            <div class="features__card-title">Электроснабжение</div>
+                            <ul class="features__card-list">
+                                <li>контроль состояния линии</li>
+                                <li>контроль параметров</li>
+                                <li>технический учет</li>
+                                <li>срабатывание АВР</li>
+                                <li>освещение</li>
+                            </ul>
+                        </div>
+                        <div class="features__card">
+                            <div class="features__card-title">Кондиционирование</div>
+                            <ul class="features__card-list">
+                                <li>вкл-выкл</li>
+                                <li>задание режима</li>
+                                <li>темп. в помещении</li>
+                                <li>энергоучет</li>
+                                <li>отказ оборудования</li>
+                            </ul>
+                        </div>
+                        <div class="features__card">
+                            <div class="features__card-title">Теплоснабжение</div>
+                            <ul class="features__card-list">
+                                <li>работа насосов</li>
+                                <li>темп. теплоносителя</li>
+                                <li>давление</li>
+                                <li>расход</li>
+                                <li>газоанализ</li>
+                            </ul>
+                        </div>
+                        <div class="features__card">
+                            <div class="features__card-title">Отопление</div>
+                            <ul class="features__card-list">
+                                <li>контроль параметров</li>
+                                <li>управление режимами</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            @@include('../../blocks/modules/feedback/_feedback.html')
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+
+        @@include('../../blocks/modules/popups/_popups.html')
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
+    <script src="js/base.min.js"></script>
+
+</body>
+
+</html>

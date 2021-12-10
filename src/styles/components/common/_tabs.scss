@@ -1,0 +1,47 @@
+.tabs-content {
+    display: none;
+
+    &--active {
+        display: block;
+    }
+}
+
+.tab {
+    background-color: #f2f2f2;
+    padding: 1.8rem 3rem;
+    @extend %text-13;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .3s all;
+    &--active {
+        background-color: $accent;
+        color: #fff;
+    }
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: $accent;
+            color: #fff;
+        }
+    }
+}
+
+.tabs {
+    @media(min-width: 1025px) {
+        display: flex;
+    }
+    @media(max-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 2rem;
+    }
+    @media(max-width: 500px) {
+        grid-template-columns: 1fr;
+    }
+    >* {
+        &:not(:last-child) {
+            @media(min-width: 1025px) {
+                margin-right: 2rem;
+            }
+        }
+    }
+}

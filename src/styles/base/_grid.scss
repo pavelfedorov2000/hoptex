@@ -1,0 +1,56 @@
+.container {
+    max-width: $container + $gap * 2;
+    padding: 0 $gap;
+    margin: 0 auto;
+}
+
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+    @extend %flex-col;
+    min-height: 100vh;
+    /* @supports ((-webkit-backdrop-filter: blur(3.1rem)) or (backdrop-filter: blur(3.1rem))) {
+        background: #fff;
+        backdrop-filter: blur(3.1rem);
+    } */
+}
+
+.page {
+    flex: 1 1 auto;
+}
+
+.inner-page {
+    padding-top: 6rem;
+    @media(max-width: 1024px) {
+        padding-top: 3rem;
+    }
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__title {
+        @extend %text-24;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+
+        @media(max-width: 1024px) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.col-50 {
+    &:last-child {
+        @media(min-width: 768px) {
+            padding-left: 3rem;
+        }
+
+        @media(min-width: 1025px) {
+            padding-left: 5rem;
+        }
+    }
+}
+// ================ GRID =============== //

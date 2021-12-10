@@ -1,0 +1,43 @@
+.pagination {
+    width: 100%;
+    @extend %vertical-align;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 0.6rem;
+        }
+    }
+
+    &__next-link {
+        margin-left: 2rem;
+        svg {
+            width: 0.5rem;
+            height: 0.8rem;
+        }
+    }
+
+    &__link {
+        width: 3rem;
+        height: 3rem;
+        border: 0.1rem solid #E0E0E0;
+        @extend %flex-center;
+        @extend %text-13;
+        color: #bdbdbd;
+        &--active {
+            color: #fff;
+            background-color: $accent;
+            border: none;
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $accent;
+                color: #fff;
+            }
+        }
+    }
+}

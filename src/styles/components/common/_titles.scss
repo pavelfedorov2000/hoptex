@@ -1,0 +1,24 @@
+.section-title {
+    @extend %gothic-600;
+    font-weight: 400;
+    @extend %text-22;
+    text-transform: uppercase;
+}
+
+.line-title {
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid #DFDFDF;
+}
+
+.page-title {
+    @extend .section-title;
+    @extend .line-title;
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid #DFDFDF;
+}
+
+.title-24 {
+    @extend %text-24;
+    font-weight: 700;
+    text-transform: uppercase;
+}

@@ -1,0 +1,162 @@
+// =========== PSEUDO =========== //
+
+// ========= INPUT NUMBER ========== //
+::-webkit-textfield-decoration-container {}
+
+::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+// ========= SEARCH INPUT ========= //
+/* Удалить круглые углы */
+input[type=search] {
+    -webkit-appearance: none;
+}
+
+/* Скрыть кнопку отмены */
+::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+/* Скрыть лупу */
+::-webkit-search-results-button {
+    -webkit-appearance: none;
+}
+
+
+
+//  ============== RANGE SLIDER ============== //
+::-webkit-slider-runnable-track {
+    border: 2px solid red;
+    background: green;
+}
+
+::-webkit-slider-thumb {
+    outline: 2px solid blue;
+}
+
+::-moz-range-track {
+    border: 2px solid red;
+    height: 20px;
+    background: orange;
+}
+
+::-moz-range-thumb {
+    background: blue;
+    height: 30px;
+}
+
+::-ms-thumb {
+    background: red;
+}
+
+::-ms-track {
+    padding: 20px 0;
+}
+
+
+// ========== INPUT FILE =========== //
+::-ms-browse {
+    background: black;
+    color: red;
+    padding: 1em;
+}
+
+::-webkit-file-upload-button {
+    background: black;
+    color: red;
+    padding: 1em;
+}
+
+
+// ============== INPUT DATE ============= //
+::-webkit-datetime-edit {
+    padding: 1em;
+}
+
+::-webkit-datetime-edit-fields-wrapper {
+    background: silver;
+}
+
+::-webkit-datetime-edit-text {
+    color: red;
+    padding: 0 0.3em;
+}
+
+::-webkit-datetime-edit-month-field {
+    color: blue;
+}
+
+::-webkit-datetime-edit-day-field {
+    color: green;
+}
+
+::-webkit-datetime-edit-year-field {
+    color: purple;
+}
+
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+::-webkit-calendar-picker-indicator {
+    background: orange;
+}
+
+
+
+// PASSWORD //
+::-ms-reveal {
+    display: none;
+}
+
+textarea {
+    &::-webkit-resizer {}
+}
+
+select {
+    &::-ms-expand {}
+}
+
+// ========== PROGRESS ========== //
+progress {
+    -webkit-appearance: none;
+}
+
+::-webkit-progress-inner-element {}
+
+::-webkit-progress-bar {}
+
+::-webkit-progress-value {}
+
+::-moz-progress-bar::-ms-fill // ========== METER =========== //
+
+meter {
+    -webkit-appearance: none;
+}
+
+::-webkit-meter-bar {}
+
+::-webkit-meter-optimum-value {}
+
+::-webkit-meter-suboptimum-value {}
+
+::-webkit-meter-even-less-good-value {}
+
+
+// ============ VALIDATTION ============= //
+::-webkit-validation-bubble {}
+
+::-webkit-validation-bubble-arrow {}
+
+::-webkit-validation-bubble-arrow-clipper {}
+
+::-webkit-validation-bubble-heading {}
+
+::-webkit-validation-bubble-message {}
+
+::-webkit-validation-bubble-text-block {}

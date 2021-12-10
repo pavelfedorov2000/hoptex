@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Услуги"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        <main class="page inner-page">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="breadcrumbs">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>
+                                Услуги
+                            </span>
+                        </li>
+                    </ol>
+                </nav>
+                <h1 class="page-title">Услуги</h1>
+                <div class="section services">
+                    <div class="services__about-text">
+                        Основное направление деятельности компании – проектирование, строительство и монтаж инженерных
+                        систем.
+                        За время работы на рынке промышленного отопления, вентиляции и кондиционирования мы заслужили
+                        надежную репутацию у
+                        заказчиков. Наш принцип – индивидуальный подход к потребностям каждого конкретного предприятия,
+                        оптимизация затрат и
+                        полное соответствие нормам строительства.
+                    </div>
+                    <div class="services__grid">
+                        <div class="services__cards">
+                            <article class="service-card">
+                                <a href="#" class="full-link"></a>
+                                <picture class="service-card__img">
+                                    <source data-srcset="img/content/services/01.webp" type="image/webp">
+                                    <img class="lazy" data-src="img/content/services/01.jpg" alt="" width="518"
+                                        height="360">
+                                </picture>
+                                <div class="service-card__content">
+                                    <h4 class="service-card__title">Проектирование</h4>
+                                    <p class="service-card__text">
+                                        На этапе создания проекта наши специалисты анализируют инженерную и
+                                        производственную нагрузку на конкретный объект.
+                                    </p>
+                                    <div class="btn service-card__btn btn--red">Подробнее</div>
+                                </div>
+                            </article>
+                            <article class="service-card">
+                                <a href="#" class="full-link"></a>
+                                <picture class="service-card__img">
+                                    <source data-srcset="img/content/services/02.webp" type="image/webp">
+                                    <img class="lazy" data-src="img/content/services/02.jpg" alt="" width="518"
+                                        height="360">
+                                </picture>
+                                <div class="service-card__content">
+                                    <h4 class="service-card__title">Поставка оборудования</h4>
+                                    <p class="service-card__text">Нужен текст</p>
+                                    <div class="btn service-card__btn btn--red">Подробнее</div>
+                                </div>
+                            </article>
+                            <article class="service-card">
+                                <a href="#" class="full-link"></a>
+                                <picture class="service-card__img">
+                                    <source data-srcset="img/content/services/03.webp" type="image/webp">
+                                    <img class="lazy" data-src="img/content/services/03.jpg" alt="" width="518"
+                                        height="360">
+                                </picture>
+                                <div class="service-card__content">
+                                    <h4 class="service-card__title">Монтаж</h4>
+                                    <p class="service-card__text">
+                                        Установка инженерных сетей требует системного подхода и понимания, как будет
+                                        выглядеть реализованный проект в целом
+                                    </p>
+                                    <div class="btn service-card__btn btn--red">Подробнее</div>
+                                </div>
+                            </article>
+                            <article class="service-card">
+                                <a href="#" class="full-link"></a>
+                                <picture class="service-card__img">
+                                    <source data-srcset="img/content/services/04.webp" type="image/webp">
+                                    <img class="lazy" data-src="img/content/services/04.jpg" alt="" width="518"
+                                        height="360">
+                                </picture>
+                                <div class="service-card__content">
+                                    <h4 class="service-card__title">Сервисное обслуживание</h4>
+                                    <p class="service-card__text">
+                                        Своевременное гарантийное и послегарантийное обслуживание – важное условие
+                                        долгой и бесперебойной работы инженерных
+                                        сетей
+                                    </p>
+                                    <div class="btn service-card__btn btn--red">Подробнее</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="services__aside aside-info">
+                            <h4 class="aside-info__title">
+                                Информация
+                            </h4>
+                            <ul class="aside-info__list">
+                                <li class="aside-info__list-item">
+                                    <a href="#" class="aside-info__list-link">Опросный лист для рачета локальной системы
+                                        отопления</a>
+                                </li>
+                                <li class="aside-info__list-item">
+                                    <a href="#" class="aside-info__list-link">Прайс-лист</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="feedback">
+                <div class="container">
+                    <h2 class="visually-hidden"></h2>
+                    <div class="feedback__inner">
+                        <div class="feedback__form">
+                            <div class="section-title feedback__form-title">
+                                Предложение
+                                о сотрудничестве
+                            </div>
+                            <form class="feedback-form" action="#">
+                                <div class="feedback-form__fields feedback-form__fields--with-textarea">
+                                    <input class="feedback-form__input input" name="name" placeholder="Имя" required>
+                                    <input class="feedback-form__input input" name="phone" type="tel"
+                                        placeholder="Телефон*" required>
+                                    <textarea class="input feedback-form__input feedback-form__textarea" name="message"
+                                        placeholder="Сообщение"></textarea>
+                                </div>
+                                <div class="feedback-form__footer">
+                                    <button class="btn feedback-form__btn btn--white" type="submit">
+                                        Оставить заявку
+                                    </button>
+                                    <small class="feedback-form__agree">
+                                        Отправляя заявку, я даю своё согласие на обработку <a href="#">персональных
+                                            данных </a>
+                                    </small>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="feedback__contact">
+                            <div class="feedback__contact-title section-title feedback__contact-title--no-grow">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#callback"></use>
+                                </svg>
+                                Для связи
+                            </div>
+                            <address class="feedback__contact-wrap">
+                                <div class="feedback__contact-item">
+                                    <div class="feedback__contact-address">
+                                        Санкт-Петербург, Пр. Медиков 9, 5 этаж
+                                    </div>
+                                    <a href="tel:+78123275019" class="feedback__contact-phone">+7 (812) 327 50 19</a>
+                                </div>
+                                <div class="feedback__contact-item">
+                                    <div class="feedback__contact-address">
+                                        Москва, Ул. Староалексеевская д. 5
+                                    </div>
+                                    <a href="tel:+78123275019" class="feedback__contact-phone">+7 (812) 327 50 19</a>
+                                </div>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('../../blocks/modules/slider-projects/_slider-projects.html')
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+
+        @@include('../../blocks/modules/popups/_popups.html')
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>

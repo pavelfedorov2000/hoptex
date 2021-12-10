@@ -1,0 +1,22 @@
+.menu {
+
+    // .menu__list
+
+    &__list {
+        
+    }
+
+    // .menu__item
+
+    &__item {}
+
+    // .menu__link
+
+    &__link {
+        @extend %text-14;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+        transition: .3s color;
+    }
+}

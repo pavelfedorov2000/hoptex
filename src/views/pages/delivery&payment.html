@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Доставка и оплата"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        @@include('../../blocks/modules/burger/burger-menu/_burger-menu.html')
+
+        <main class="page inner-page">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="breadcrumbs">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>
+                                Доставка и оплата
+                            </span>
+                        </li>
+                    </ol>
+                </nav>
+                <h1 class="page-title">Доставка и оплата</h1>
+                <section class="delivery">
+                    <div class="tabs delivery__tabs">
+                        <button class="tab tab--active" data-tab="peterburg" type="button">Санкт-Петербург</button>
+                        <button class="tab" data-tab="moscow" type="button">Москва и московская
+                            область</button>
+                        <button class="tab" data-tab="russia" type="button">Россия (все регионы)</button>
+                    </div>
+                    <div id="peterburg" class="tabs-content tabs-content--active">
+                        <div class="delivery__items">
+                            <div class="delivery__item">
+                                <svg class="delivery__item-img">
+                                    <use xlink:href="img/sprite.svg#truck"></use>
+                                </svg>
+                                <div class="delivery__item-text">
+                                    <b>Возможные способы доставки по Санкт-Петербургу:</b>
+                                    <ul>
+                                        <li>Доставка по городу – от 500 руб.</li>
+                                        <li>Резервирование с самовывозом со склада.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="delivery__item">
+                                <svg class="delivery__item-img">
+                                    <use xlink:href="img/sprite.svg#credits"></use>
+                                </svg>
+                                <div class="delivery__item-text">
+                                    <b>Способы оплаты при доставке по Санкт-Петербургу:</b>
+                                    <p>Предоплатой по счёту банковским переводом</p>
+                                    <p>
+                                        Cчёт выставляется менеджером при подтверждении заказа. После выставления счёта
+                                        товар
+                                        резервируется на 3 дня. В течение
+                                        этого времени необходимо оплатить товар и сообщить менеджеру об оплате.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="moscow" class="tabs-content">
+                        <div class="delivery__items">
+                            <div class="delivery__item">
+                                <svg class="delivery__item-img">
+                                    <use xlink:href="img/sprite.svg#truck"></use>
+                                </svg>
+                                <div class="delivery__item-text">
+                                    <b>Возможные способы доставки по Москве:</b>
+                                    <ul>
+                                        <li>Доставка по городу – от 500 руб.</li>
+                                        <li>Резервирование с самовывозом со склада.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="delivery__item">
+                                <svg class="delivery__item-img">
+                                    <use xlink:href="img/sprite.svg#credits"></use>
+                                </svg>
+                                <div class="delivery__item-text">
+                                    <b>Способы оплаты при доставке по Москве:</b>
+                                    <p>Предоплатой по счёту банковским переводом</p>
+                                    <p>
+                                        Cчёт выставляется менеджером при подтверждении заказа. После выставления счёта
+                                        товар
+                                        резервируется на 3 дня. В течение
+                                        этого времени необходимо оплатить товар и сообщить менеджеру об оплате.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="russia" class="tabs-content">
+                        <div class="delivery__items">
+                            <div class="delivery__item">
+                                <svg class="delivery__item-img">
+                                    <use xlink:href="img/sprite.svg#truck"></use>
+                                </svg>
+                                <div class="delivery__item-text">
+                                    <b>Возможные способы доставки по России:</b>
+                                    <ul>
+                                        <li>Доставка по городу – от 500 руб.</li>
+                                        <li>Резервирование с самовывозом со склада.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="delivery__item">
+                                <svg class="delivery__item-img">
+                                    <use xlink:href="img/sprite.svg#credits"></use>
+                                </svg>
+                                <div class="delivery__item-text">
+                                    <b>Способы оплаты при доставке по России:</b>
+                                    <p>Предоплатой по счёту банковским переводом</p>
+                                    <p>
+                                        Cчёт выставляется менеджером при подтверждении заказа. После выставления счёта
+                                        товар
+                                        резервируется на 3 дня. В течение
+                                        этого времени необходимо оплатить товар и сообщить менеджеру об оплате.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ordering">
+                    <h2 class="section-title ordering__title">Об оформлении заказа</h2>
+                    <p class="ordering__text">
+                        При желании вы также можете оформить заказ по телефону с помощью наших менеджеров
+                    </p>
+                    <ul class="ordering__contacts">
+                        <li class="ordering__contact">
+                            <a href="tel:+78123275019" class="ordering__contact-phone">+7 (812) 327-50-19</a>
+                            <div class="ordering__contact-city">Санкт-Петербург</div>
+                        </li>
+                        <li class="ordering__contact">
+                            <a href="tel:+74959874211" class="ordering__contact-phone">+7 (495) 987-42-11</a>
+                            <div class="ordering__contact-city">Москва</div>
+                        </li>
+                    </ul>
+                    <p>Или по электронной почте <a href="#">office@nortech.ru</a>.</p>
+                </section>
+            </div>
+        </main>
+
+        @@include('../../blocks/modules/footer/_footer.html')
+
+        @@include('../../blocks/modules/popups/_popups.html')
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
+    <script src="js/base.min.js"></script>
+
+</body>
+
+</html>

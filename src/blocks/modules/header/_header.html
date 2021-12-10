@@ -1,0 +1,77 @@
+<header class="header">
+    <form action="#" class="search-form">
+        <input class="search-form__input" placeholder="Поиск...">
+        <button class="search-form__btn" type="submit">
+            <svg>
+                <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+        </button>
+    </form>
+    <div class="header__top">
+        <div class="header__top-inner">
+            <div class="logo header__logo">
+                <a href="#">
+                    <picture>
+                        <source data-srcset="img/logo/header-logo.webp" type="image/webp">
+                        <img class="lazy logo__img header__logo-img" data-src="img/logo/header-logo.png"
+                            alt="Логотип HOPTEX" width="163" height="64">
+                    </picture>
+                </a>
+            </div>
+            <div class="header__contacts" data-da=".burger-menu, 1024, 2">
+                <div class="header__contact contact-header">
+                    <div class="contact-header__top">
+                        <div class="contact-header__address contact-address">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#pin"></use>
+                            </svg>
+                            Санкт-Петербург, Пр. Медиков 9, 5 этаж
+                        </div>
+                        <div class="contact-header__time contact-timetable">
+                            Пн-Вс: с 10:00-17:00
+                        </div>
+                    </div>
+                    <div class="contact-header__links">
+                        <a href="tel:+78123275019" class="contact-header__phone contact-phone">
+                            +7 (812) 327 50 19
+                        </a>
+                        <a href="mailto:op@nortech.ru" class="contact-header__mail contact-email">op@nortech.ru</a>
+                    </div>
+                </div>
+                <div class="header__contact contact-header">
+                    <div class="contact-header__top">
+                        <div class="contact-header__address contact-address">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#pin"></use>
+                            </svg>
+                            Москва, Ул. Староалексеевская д. 5
+                        </div>
+                        <div class="contact-header__time">
+                            Пн-Вс: с 10:00-17:00
+                        </div>
+                    </div>
+                    <div class="contact-header__links">
+                        <a href="tel:+74959874211" class="contact-header__phone contact-phone">
+                            +7 (495) 987 42 11
+                        </a>
+                        <a href="mailto:info-m@nortech.ru"
+                            class="contact-header__mail contact-email">info-m@nortech.ru</a>
+                    </div>
+                </div>
+            </div>
+            <button class="header__search-btn">
+                <svg>
+                    <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+            </button>
+            <button class="header__callback" data-da=".burger-menu, 767, 3">
+                <svg>
+                    <use xlink:href="img/sprite.svg#callback"></use>
+                </svg>
+                <span>Заказать звонок</span>
+            </button>
+            @@include('../burger/burger-btn/_burger-btn.html')
+        </div>
+    </div>
+    @@include('./_header__menu.html')
+</header>
